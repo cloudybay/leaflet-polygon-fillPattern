@@ -32,6 +32,13 @@ if (L.Browser.svg) {
                 _p.setAttribute('patternUnits', 'userSpaceOnUse');
                 _p.setAttribute('width', '24');
                 _p.setAttribute('height', '24');
+                var _rect = this._createElement('rect');
+                _rect.setAttribute('width', 24)
+                _rect.setAttribute('height', 24)
+                _rect.setAttribute('x', 0)
+                _rect.setAttribute('x', 0)
+                _rect.setAttribute('fill', this.options.fillColor);
+                _p.appendChild(_rect);
                 this._defs.appendChild(_p);
 
                 var _img = this._createElement('image');
